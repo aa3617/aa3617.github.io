@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --tag-bg: #e0e7ff;
+      --tag-text: #3730a3;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+    }
+
+    .statement {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    section {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-main);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    /* Skills Styling */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      list-style: none;
+    }
+
+    .skills-list li {
+      background-color: var(--tag-bg);
+      color: var(--tag-text);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    /* Projects Styling */
+    .project-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      background-color: #fafafa;
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .project-card p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .project-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .project-links a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Header / Personal Statement -->
+    <header>
+      <h1>Your Name</h1>
+      <p class="statement">
+        Driven Full-Stack Developer specializing in building scalable web applications and delivering seamless, user-centric digital experiences.
+      </p>
+    </header>
+
+    <!-- Skills Section -->
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>JavaScript (ES6+)</li>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>HTML5 & CSS3</li>
+        <li>Python</li>
+        <li>Git & GitHub</li>
+        <li>REST APIs</li>
+        <li>SQL / PostgreSQL</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section>
+      <h2>Projects</h2>
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <h3>E-Commerce Web Application</h3>
+          <p>
+            A full-featured online storefront built with React and Node.js featuring product filtering, cart functionality, and integrated payment processing.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/project-one" target="_blank" rel="noopener">Source Code</a>
+            <a href="https://your-demo-url.com" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <h3>Task Management Dashboard</h3>
+          <p>
+            A real-time productivity tool allowing users to create, organize, and track personal tasks with customizable kanban boards.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/project-two" target="_blank" rel="noopener">Source Code</a>
+            <a href="https://your-demo-url.com" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <h3>Weather Forecast App</h3>
+          <p>
+            A responsive web app fetching real-time weather data and 5-day forecasts using a third-party REST API and geolocation.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/project-three" target="_blank" rel="noopener">Source Code</a>
+            <a href="https://your-demo-url.com" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
